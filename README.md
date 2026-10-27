@@ -4,6 +4,8 @@ Intel BE200 在 macOS Sequoia 上使用原生 Wi-Fi 界面的实测分享包，�
 
 **驱动来自 [HuajiFruit/AirportBZ](https://github.com/HuajiFruit/AirportBZ)，本仓库没有修改上游驱动功能。** 这里整理的是固定版本源码的 macOS 本机编译、安装工具和单机实测，不能视为独立开发的新驱动或长期稳定版。此前的 BE200 固件诊断移植项目不属于本包。
 
+> **免责声明：本项目仅在作者本人设备上测试可用，属于个人实验性分享，不保证适用于其他设备。使用前请备份 EFI 并准备恢复方式；因安装或修改导致的无法启动、数据丢失等风险，由使用者自行承担。**
+
 ## 下载与安装
 
 优先从 [Releases](https://github.com/JiangDan666/BE200-Sequoia-Share/releases) 下载完整分享 ZIP，解压后阅读 [先读我-安装与回退.md](先读我-安装与回退.md)，再双击 `安装驱动.command`。完整 ZIP 保留脚本执行权限；请勿只取一个 kext 而忽略系统无线组件的兼容条件。
