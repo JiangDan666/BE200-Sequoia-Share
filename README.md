@@ -8,7 +8,7 @@ Intel BE200 在 macOS Sequoia 上使用原生 Wi-Fi 界面的实测分享包，�
 
 优先从 [Releases](https://github.com/JiangDan666/BE200-Sequoia-Share/releases) 下载完整分享 ZIP，解压后阅读 [先读我-安装与回退.md](先读我-安装与回退.md)，再双击 `安装驱动.command`。完整 ZIP 保留脚本执行权限；请勿只取一个 kext 而忽略系统无线组件的兼容条件。
 
-网页仓库同时提供完整分发包 [`BE200-Sequoia-Share-v0.1.0-experimental.zip`](https://github.com/JiangDan666/BE200-Sequoia-Share/blob/main/BE200-Sequoia-Share-v0.1.0-experimental.zip)。**对应源码、固件、构建脚本和安装工具均包含在这个 ZIP 内**，解压后可查看 `Source/AirportBZ` 与 `scripts`。网页根目录中的说明供在线阅读，安装和重新构建请使用解压后的完整目录。
+当前分发包为 [`BE200-Sequoia-Share.zip`](https://github.com/JiangDan666/BE200-Sequoia-Share/releases/download/v0.1.0-sequoia-experimental/BE200-Sequoia-Share.zip)，整包 SHA-256：`e37ac3a353d905c21959f9ebc3560198d7b1d49a2de1c55b5baec45b14b2a60f`。**对应源码、固件、构建脚本和安装工具均包含在这个 ZIP 内**，解压后可查看 `Source/AirportBZ` 与 `scripts`。网页根目录中的说明供在线阅读，安装和重新构建请使用解压后的完整目录。
 
 安装器会要求确认实际启动 OpenCore 的 ESP，先备份并校验完整 EFI，再修改无线加载项。备份带回退脚本，不会自动重启。预编译版安装不需要 Python 或 Xcode。通用安装器通过离线检查，尚未在第二台机器完成安装及回退全流程测试。
 
@@ -41,7 +41,7 @@ WPA3/SAE、强制 PMF、6 GHz、320 MHz、MLO、AWDL/AirDrop 不支持；HE/802.
 
 驱动源码按随附 [GPLv2 LICENSE](LICENSE) 提供，各文件原有声明保留；新增安装/配置工具为 GPL-2.0-only。**Intel 固件及 PNVM 是单独许可的二进制，不是 GPL 开源固件**，见 [LICENCE.bz-firmware](LICENCE.bz-firmware)。请保留许可及来源，不表示 Intel 或上游作者为本分享包背书。
 
-已测试可执行文件 SHA-256：`aa0d3f6d518570e3069780d5f1678c5287090f09bece5631cd5a803aeb1e7946`。完整载荷清单见 `SHA256SUMS.txt`。重新构建的二进制需要重新实测。
+已测试可执行文件 SHA-256：`aa0d3f6d518570e3069780d5f1678c5287090f09bece5631cd5a803aeb1e7946`。新精简 ZIP 中的 `SHA256SUMS.txt` 保留了精简前的四个说明文件条目；整包校验请以 Release 中的 `BE200-Sequoia-Share.zip.sha256` 为准。重新构建的二进制需要重新实测。
 
 ## English overview
 
